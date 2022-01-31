@@ -1,51 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="switch.css">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <title>Dashbord</title>
 </head>
 <body>
     <header>
+        <div class="switchPosition">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="openClose"><img></span>
+            </label>
+        </div>
         <nav class="dashboard">
-            <label class="switch"><input type="checkbox"><span class="openClose"></span></label></div>
             <div class="perfil">
                 <img src="" alt="">
                 <h2>Raquel Fonseca</h2>
                 <h3>Front-end Developer</h3>
             </div>
-            <div class="navbar">
-                <div class="btn">
-                    <img src="" alt="">
-                   <input type="text" placeholder="procurar">
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Dashboard</a>
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Gráficos</a>
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Notificações</a>
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Análise</a>
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Likes</a>
-                </div>                <div class="btn">
-                    <img src="" alt="" class="icon">
-                    <a href="">Carteira</a>
-                </div>
-            </div>
+            <ul class="navbar">
+                <li class="navbar_links">
+                    <div class="icon" ><box-icon name='search' ></box-icon></div>
+                    <input type="search" placeholder="procurar...">
+                </li> 
+                <li class="navbar_links selected">
+                    <div class="icon selected"><box-icon name='home-alt'></box-icon></div>
+                    <a href="#" class="text_link selected" lang="en">DashBoard</a>
+                </li>
+                <li class="navbar_links">
+                    <div class="icon"><box-icon name='bar-chart-alt-2' ></box-icon></div>
+                    <a href="#" class="text_link">Gráficos</a>
+                </li>
+                <li class="navbar_links">
+                    <div class="icon"><box-icon name='bell' ></box-icon></div>
+                    <a href="#" class="text_link">Notificações</a>
+                </li>
+                <li class="navbar_links">
+                    <div class="icon"><box-icon name='pie-chart-alt' ></box-icon></div>
+                    <a href="#" class="text_link">Análises</a>
+                </li>
+                <li class="navbar_links">
+                    <div class="icon"><box-icon name='heart' ></box-icon></div>
+                    <a href="#" class="text_link" lang="en">Like</a>
+                </li>
+                <li class="navbar_links">
+                    <div class="icon"><box-icon name='wallet'></box-icon></div>
+                    <a href="#" class="text_link">Carteira</a>
+                </li>
+                         
+              
+            </ul>
             <div class="footer">
                 <div class="btn">
                     <img src="" alt="" class="icon">
                     <a href="">Logout</a>
+                    <div>
+                        <img>
+                        <p>Modo noturno</p>
+                        <label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+                    </div>
                 </div>
-                <label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
+               
         </nav>
     </header>
     <main>
